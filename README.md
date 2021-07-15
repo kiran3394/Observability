@@ -3,7 +3,7 @@
 #### Technology Stack deployed on Minikube are as follows: (Used helm-charts)
 
 ###### Sample SpringBoot application
-- Build jar - `gradlew clean build`
+- Build jar - `./gradlew clean build`
 - Run `eval $(minikube docker-env)`
 - create docker image of application using Dockerfile - `docker build -t test-image .`
 - Run `docker run -d -p 8080:80 --name test-image test-image`

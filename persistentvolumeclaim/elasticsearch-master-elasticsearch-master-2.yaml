@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    pv.kubernetes.io/bind-completed: "yes"
+    pv.kubernetes.io/bound-by-controller: "yes"
+    volume.beta.kubernetes.io/storage-provisioner: k8s.io/minikube-hostpath
+  creationTimestamp: "2021-07-14T19:30:47Z"
+  finalizers:
+  - kubernetes.io/pvc-protection
+  labels:
+    app: elasticsearch-master
+  name: elasticsearch-master-elasticsearch-master-2
+  namespace: default
+  resourceVersion: "5844"
+  uid: c39ac480-3a1f-4511-8f18-b9ae98e4d4fe
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100M
+  storageClassName: standard
+  volumeMode: Filesystem
+  volumeName: pvc-c39ac480-3a1f-4511-8f18-b9ae98e4d4fe
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 100M
+  phase: Bound

@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-07-14T18:04:13Z"
+  labels:
+    app: test-image
+  name: test-image
+  namespace: default
+  resourceVersion: "821"
+  uid: e909043b-6f31-4ebe-8302-14b80224111e
+spec:
+  clusterIP: 10.107.181.204
+  clusterIPs:
+  - 10.107.181.204
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: test-image
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

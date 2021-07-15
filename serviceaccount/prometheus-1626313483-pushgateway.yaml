@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-1626313483
+    meta.helm.sh/release-namespace: default
+  creationTimestamp: "2021-07-15T01:44:48Z"
+  labels:
+    app: prometheus
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-11.12.1
+    component: pushgateway
+    heritage: Helm
+    release: prometheus-1626313483
+  name: prometheus-1626313483-pushgateway
+  namespace: default
+  resourceVersion: "9558"
+  uid: 4e3f0f2c-4480-40be-8145-ac250572cfde
+secrets:
+- name: prometheus-1626313483-pushgateway-token-bphml

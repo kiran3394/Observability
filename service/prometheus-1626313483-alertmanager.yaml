@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-1626313483
+    meta.helm.sh/release-namespace: default
+  creationTimestamp: "2021-07-15T01:44:49Z"
+  labels:
+    app: prometheus
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-11.12.1
+    component: alertmanager
+    heritage: Helm
+    release: prometheus-1626313483
+  name: prometheus-1626313483-alertmanager
+  namespace: default
+  resourceVersion: "9601"
+  uid: 48bde874-4006-44c7-bee1-ea7a6f78f8dc
+spec:
+  clusterIP: 10.108.86.29
+  clusterIPs:
+  - 10.108.86.29
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 9093
+  selector:
+    app: prometheus
+    component: alertmanager
+    release: prometheus-1626313483
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

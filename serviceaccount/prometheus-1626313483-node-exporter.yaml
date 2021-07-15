@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-1626313483
+    meta.helm.sh/release-namespace: default
+  creationTimestamp: "2021-07-15T01:44:48Z"
+  labels:
+    app: prometheus
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-11.12.1
+    component: node-exporter
+    heritage: Helm
+    release: prometheus-1626313483
+  name: prometheus-1626313483-node-exporter
+  namespace: default
+  resourceVersion: "9564"
+  uid: 96c54bbd-ddcd-4114-b258-7ff1e5e96cf9
+secrets:
+- name: prometheus-1626313483-node-exporter-token-dgkrq

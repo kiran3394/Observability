@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-1626313483
+    meta.helm.sh/release-namespace: default
+    prometheus.io/scrape: "true"
+  creationTimestamp: "2021-07-15T01:44:48Z"
+  labels:
+    app: prometheus
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-11.12.1
+    component: node-exporter
+    heritage: Helm
+    release: prometheus-1626313483
+  name: prometheus-1626313483-node-exporter
+  namespace: default
+  resourceVersion: "9583"
+  uid: fb90efee-8574-4bec-b5d4-7d01fb979a9b
+spec:
+  clusterIP: None
+  clusterIPs:
+  - None
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: metrics
+    port: 9100
+    protocol: TCP
+    targetPort: 9100
+  selector:
+    app: prometheus
+    component: node-exporter
+    release: prometheus-1626313483
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

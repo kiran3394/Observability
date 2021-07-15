@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    meta.helm.sh/release-name: grafana-1626315024
+    meta.helm.sh/release-namespace: default
+  creationTimestamp: "2021-07-15T02:10:29Z"
+  labels:
+    app.kubernetes.io/instance: grafana-1626315024
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: grafana
+    app.kubernetes.io/version: 7.1.1
+    helm.sh/chart: grafana-5.5.7
+  name: grafana-1626315024
+  namespace: default
+  resourceVersion: "10860"
+  uid: 3aa6a406-7b2a-457d-b745-952715de5061
+spec:
+  clusterIP: 10.103.152.146
+  clusterIPs:
+  - 10.103.152.146
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: service
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app.kubernetes.io/instance: grafana-1626315024
+    app.kubernetes.io/name: grafana
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  creationTimestamp: "2021-07-14T17:56:16Z"
+  name: default
+  namespace: default
+  resourceVersion: "408"
+  uid: 8ebf4b42-cf6e-4f91-b5a2-7f19e46e53b4
+secrets:
+- name: default-token-mqjlp

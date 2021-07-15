@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-1626313483
+    meta.helm.sh/release-namespace: default
+    prometheus.io/probe: pushgateway
+  creationTimestamp: "2021-07-15T01:44:49Z"
+  labels:
+    app: prometheus
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-11.12.1
+    component: pushgateway
+    heritage: Helm
+    release: prometheus-1626313483
+  name: prometheus-1626313483-pushgateway
+  namespace: default
+  resourceVersion: "9593"
+  uid: 7808388f-a05a-4ebd-b20d-92c9b709abb6
+spec:
+  clusterIP: 10.97.221.245
+  clusterIPs:
+  - 10.97.221.245
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: http
+    port: 9091
+    protocol: TCP
+    targetPort: 9091
+  selector:
+    app: prometheus
+    component: pushgateway
+    release: prometheus-1626313483
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

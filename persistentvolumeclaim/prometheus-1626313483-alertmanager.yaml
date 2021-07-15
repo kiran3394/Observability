@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-1626313483
+    meta.helm.sh/release-namespace: default
+    pv.kubernetes.io/bind-completed: "yes"
+    pv.kubernetes.io/bound-by-controller: "yes"
+    volume.beta.kubernetes.io/storage-provisioner: k8s.io/minikube-hostpath
+  creationTimestamp: "2021-07-15T01:44:48Z"
+  finalizers:
+  - kubernetes.io/pvc-protection
+  labels:
+    app: prometheus
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-11.12.1
+    component: alertmanager
+    heritage: Helm
+    release: prometheus-1626313483
+  name: prometheus-1626313483-alertmanager
+  namespace: default
+  resourceVersion: "9599"
+  uid: ff74a4c9-b931-4dc7-9877-68068bc76389
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard
+  volumeMode: Filesystem
+  volumeName: pvc-ff74a4c9-b931-4dc7-9877-68068bc76389
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 2Gi
+  phase: Bound

@@ -1,0 +1,6 @@
+grafana.ini:
+  smtp:
+    enabled: true
+    host: "smtp.gmail.com"
+    user: "metricsproject803@gmail.com"
+    password: "apps12345"

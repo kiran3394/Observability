@@ -5,15 +5,15 @@ metadata:
     pv.kubernetes.io/bind-completed: "yes"
     pv.kubernetes.io/bound-by-controller: "yes"
     volume.beta.kubernetes.io/storage-provisioner: k8s.io/minikube-hostpath
-  creationTimestamp: "2021-07-14T19:30:47Z"
+  creationTimestamp: "2021-07-15T04:26:44Z"
   finalizers:
   - kubernetes.io/pvc-protection
   labels:
     app: elasticsearch-master
   name: elasticsearch-master-elasticsearch-master-1
   namespace: default
-  resourceVersion: "5838"
-  uid: 03ce6e26-117a-48dd-87e5-c5852b018fb2
+  resourceVersion: "17949"
+  uid: 27b2474e-1a2e-4575-ab19-d7a3413da1e8
 spec:
   accessModes:
   - ReadWriteOnce
@@ -22,7 +22,7 @@ spec:
       storage: 100M
   storageClassName: standard
   volumeMode: Filesystem
-  volumeName: pvc-03ce6e26-117a-48dd-87e5-c5852b018fb2
+  volumeName: pvc-27b2474e-1a2e-4575-ab19-d7a3413da1e8
 status:
   accessModes:
   - ReadWriteOnce

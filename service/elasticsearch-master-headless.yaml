@@ -2,20 +2,20 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    meta.helm.sh/release-name: elasticsearch-1626291043
+    meta.helm.sh/release-name: elasticsearch
     meta.helm.sh/release-namespace: default
     service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
-  creationTimestamp: "2021-07-14T19:30:46Z"
+  creationTimestamp: "2021-07-15T04:37:17Z"
   labels:
     app: elasticsearch-master
     app.kubernetes.io/managed-by: Helm
     chart: elasticsearch
     heritage: Helm
-    release: elasticsearch-1626291043
+    release: elasticsearch
   name: elasticsearch-master-headless
   namespace: default
-  resourceVersion: "5785"
-  uid: f54cf9ac-4a82-4958-8f0f-d00408c8d5cf
+  resourceVersion: "18866"
+  uid: fb893298-caba-4cbc-b049-d50c3bccef8b
 spec:
   clusterIP: None
   clusterIPs:

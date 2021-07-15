@@ -3,20 +3,20 @@ kind: StatefulSet
 metadata:
   annotations:
     esMajorVersion: "7"
-    meta.helm.sh/release-name: elasticsearch-1626291043
+    meta.helm.sh/release-name: elasticsearch
     meta.helm.sh/release-namespace: default
-  creationTimestamp: "2021-07-14T19:30:46Z"
+  creationTimestamp: "2021-07-15T04:37:17Z"
   generation: 1
   labels:
     app: elasticsearch-master
     app.kubernetes.io/managed-by: Helm
     chart: elasticsearch
     heritage: Helm
-    release: elasticsearch-1626291043
+    release: elasticsearch
   name: elasticsearch-master
   namespace: default
-  resourceVersion: "6096"
-  uid: ce7a8d37-b5bb-4cf9-a41f-73acd94fde32
+  resourceVersion: "19969"
+  uid: 2a044549-7c43-4dac-9c1e-84833eb7cae1
 spec:
   podManagementPolicy: Parallel
   replicas: 3
@@ -31,7 +31,7 @@ spec:
       labels:
         app: elasticsearch-master
         chart: elasticsearch
-        release: elasticsearch-1626291043
+        release: elasticsearch
       name: elasticsearch-master
     spec:
       affinity:
@@ -208,9 +208,9 @@ spec:
 status:
   collisionCount: 0
   currentReplicas: 3
-  currentRevision: elasticsearch-master-6bbfb4c458
+  currentRevision: elasticsearch-master-6c844b44ff
   observedGeneration: 1
-  readyReplicas: 3
+  readyReplicas: 2
   replicas: 3
-  updateRevision: elasticsearch-master-6bbfb4c458
+  updateRevision: elasticsearch-master-6c844b44ff
   updatedReplicas: 3

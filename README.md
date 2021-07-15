@@ -1,4 +1,4 @@
-##Metrics and Logging Pipeline for a application deployed on Kubernetes (minikube) 
+## Metrics and Logging Pipeline for a application deployed on Kubernetes (minikube) 
 
 #### Technology Stack deployed on Minikube are as follows: (Used helm-charts)
 
